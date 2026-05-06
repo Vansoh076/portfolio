@@ -1,0 +1,22 @@
+.body{
+    color: white;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    text-decoration: none;
+}
+.about_me,.projects,.skills,.contacts{
+    border: 2px red solid;
+}
+.project-item,.skill-type,.img,.details{
+    border: 1px dashed yellow;
+    height: 200px;
+}
+.nav-item{
+    justify-content: space-evenly;
+    list-style: none;
+}
