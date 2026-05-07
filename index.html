@@ -7,93 +7,7 @@
     <title>Portfolio | System Architect</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Inter', -apple-system, sans-serif;
-            position: relative;
-        }
-
-        /* Minimalist Nav Styling */
-        .navbar {
-            background-color: rgba(18, 18, 18, 0.95) !important;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-pills .nav-link {
-            color: #888;
-            background: none !important;
-            border-radius: 0;
-            padding: 10px 20px;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-pills .nav-link:hover {
-            color: #fff;
-        }
-
-        .nav-pills .nav-link.active {
-            color: #ffffff !important;
-        }
-
-        .nav-pills .nav-link.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 20%;
-            width: 60%;
-            height: 2px;
-            background-color: #0d6efd;
-        }
-
-        section {
-            padding: 100px 0;
-            min-height: 80vh;
-        }
-
-        .card {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            color: white;
-            transition: 0.4s;
-        }
-
-        .card:hover {
-            border-color: #0d6efd;
-            transform: translateY(-8px);
-        }
-
-        .badge-skill {
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            color: #e0e0e0;
-        }
-
-        .profile-img {
-            max-width: 280px;
-            border: 3px solid #333;
-            padding: 10px;
-        }
-
-        /* CV Button Styling */
-        .btn-download {
-            border: 1px solid #0d6efd;
-            color: #0d6efd;
-            transition: 0.3s;
-            padding: 10px 25px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
-        }
-
-        .btn-download:hover {
-            background-color: #0d6efd;
-            color: #fff;
-            box-shadow: 0 0 15px rgba(13, 110, 253, 0.4);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100">
@@ -135,6 +49,66 @@
         <div class="container">
             <h2 class="mb-5 border-bottom pb-2">Selected Projects</h2>
             <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Media Automation Engine</h5>
+                            <p class="card-text text-secondary">Utilizing Playwright and XPath for automated media
+                                retrieval.</p>
+                            <div class="mb-4">
+                                <span class="badge badge-skill">Flask</span>
+                                <span class="badge badge-skill">Playwright</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-light btn-sm">Technical Breakdown</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Asynchronous Data Pipeline</h5>
+                            <p class="card-text text-secondary">A Producer/Worker architecture managing complex job
+                                states.</p>
+                            <div class="mb-4">
+                                <span class="badge badge-skill">Flask</span>
+                                <span class="badge badge-skill">BS4</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-light btn-sm">View System Logic</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Media Automation Engine</h5>
+                            <p class="card-text text-secondary">Utilizing Playwright and XPath for automated media
+                                retrieval.</p>
+                            <div class="mb-4">
+                                <span class="badge badge-skill">Flask</span>
+                                <span class="badge badge-skill">Playwright</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-light btn-sm">Technical Breakdown</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Asynchronous Data Pipeline</h5>
+                            <p class="card-text text-secondary">A Producer/Worker architecture managing complex job
+                                states.</p>
+                            <div class="mb-4">
+                                <span class="badge badge-skill">Flask</span>
+                                <span class="badge badge-skill">BS4</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-light btn-sm">View System Logic</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-6">
                     <div class="card h-100 p-3">
                         <div class="card-body">
@@ -165,27 +139,47 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="py-5">
         <div class="container">
             <h2 class="mb-5 border-bottom pb-2">Expertise</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h5 class="text-secondary mb-3">Technical</h5>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <h5 class="text-secondary mb-3"><i class="bi bi-code-slash me-2"></i>Backend & Logic</h5>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Python</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Python (Advanced)</span>
                         <span class="badge rounded-pill p-2 px-3 border border-secondary">Flask</span>
                         <span class="badge rounded-pill p-2 px-3 border border-secondary">PostgreSQL</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">SQLite3</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">REST APIs</span>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h5 class="text-secondary mb-3">Professional</h5>
+
+                <div class="col-md-4">
+                    <h5 class="text-secondary mb-3"><i class="bi bi-robot me-2"></i>Automation</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Playwright</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">BeautifulSoup4</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">yt-dlp</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Xpath/Selectors</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Requests</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-secondary mb-3"><i class="bi bi-terminal me-2"></i>Systems</h5>
                     <div class="d-flex flex-wrap gap-2">
                         <span class="badge rounded-pill p-2 px-3 border border-secondary">System Architecture</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Git</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Git / Version Control</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Bash Scripting</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Linux / Live USB Ops</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">AI Prompting</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
