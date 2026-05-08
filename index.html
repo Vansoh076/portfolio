@@ -23,20 +23,44 @@
         </div>
     </nav>
 
-    <section id="about_me">
+    <section id="about" class="py-5 bg-dark">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="Profile" class="img-fluid rounded-circle profile-img" alt="Profile Picture">
+                    <img src="profile.jpeg" class="img-fluid rounded-circle border border-primary p-2"
+                        style="max-width: 280px; filter: grayscale(100%);" alt="Profile Picture">
                 </div>
+
                 <div class="col-md-8">
-                    <h1 class="display-4 fw-bold">Python Developer & Architect</h1>
-                    <p class="lead text-secondary mt-3">
-                        Specializing in modular systems and automation pipelines. I bridge the gap between
-                        AI-driven prototyping and robust, backend engineering.
+                    <h1 class="display-5 fw-bold text-white mb-2">Evanson Kinga Irungu</h1>
+                    <p class="h4 text-primary fw-semibold mb-3">
+                        Python Developer & Backend Engineer<br>
+                        <span class="text-secondary mx-2"></span>
+                        Computer Scince | Kirinyaga University
                     </p>
+
+                    <div class="bio-text text-secondary">
+                        <p>
+                            My work is focused on engineering scalable, data-driven backend solutions. I specialize in
+                            developing robust server-side logic and managing complex relational databases, ensuring that
+                            core infrastructure is both performant and secure.
+                        </p>
+                        <p>
+                         I focus on:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-chevron-right text-primary me-2"></i><strong>Backend:</strong> Flask &
+                                RESTful API Architecture</li>
+                            <li><i class="bi bi-chevron-right text-primary me-2"></i><strong>Databases:</strong> MySQL &
+                                SQLite3 Optimization</li>
+                            <li><i class="bi bi-chevron-right text-primary me-2"></i><strong>Automation:</strong>
+                                Advanced
+                                Python-based Scripting</li>
+                        </ul>
+                    </div>
+
                     <div class="mt-4">
-                        <a href="CV.pdf" download class="btn btn-download rounded-pill">
+                        <a href="CV.pdf" download class="btn btn-outline-primary rounded-pill px-4">
                             <i class="bi bi-download me-2"></i> Download CV
                         </a>
                     </div>
@@ -46,137 +70,141 @@
     </section>
 
     <section id="projects" class="bg-dark">
+
         <div class="container">
-            <h2 class="mb-5 border-bottom pb-2">Selected Projects</h2>
+            <h2 class="mb-5 border-bottom pb-2">Projects</h2>
             <div class="row g-4">
 
-                <div class="col-md-6">
-                    <div class="card h-100 p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Media Automation Engine</h5>
-                            <p class="card-text text-secondary">Utilizing Playwright and XPath for automated media
-                                retrieval.</p>
-                            <div class="mb-4">
-                                <span class="badge badge-skill">Flask</span>
-                                <span class="badge badge-skill">Playwright</span>
+                <div class="col-lg-6">
+                    <div class="card h-100 p-3 shadow-sm border-secondary">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary fw-bold">Personal Workspace Improved</h5>
+                            <p class="card-text text-secondary small flex-grow-1">
+                                A personalised dashboard with movies section and allows media donwload with yt-dlp.
+                                Implemented
+                                <strong>yt-dlp</strong> and <strong>FFmpeg</strong> for asynchronous transcoding,
+                                integrated
+                                <strong>TMDB API</strong> to retrieve movies and intergrated Vidnet & Videasy
+                                players
+                                for direct streaming.
+                                <strong>Plawright</strong> for getting movie urls to allow downloads via yt-dlp.
+                                Can also pass video url and download as Mp4 or Mp3 via <strong>yt-dlp</strong>.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-skill">Python/Flask</span>
+                                <span class="badge badge-skill">SQLite3</span>
+                                <span class="badge badge-skill">yt-dlp</span>
+                                <span class="badge badge-skill">FFmpeg</span>
+                                <span class="badge badge-skill">TMDB API</span>
+                                <span class="badge badge-skill">JS (DOM)</span>
                             </div>
-                            <a href="#" class="btn btn-outline-light btn-sm">Technical Breakdown</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Asynchronous Data Pipeline</h5>
-                            <p class="card-text text-secondary">A Producer/Worker architecture managing complex job
-                                states.</p>
-                            <div class="mb-4">
-                                <span class="badge badge-skill">Flask</span>
-                                <span class="badge badge-skill">BS4</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-light btn-sm">View System Logic</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card h-100 p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Media Automation Engine</h5>
-                            <p class="card-text text-secondary">Utilizing Playwright and XPath for automated media
-                                retrieval.</p>
-                            <div class="mb-4">
-                                <span class="badge badge-skill">Flask</span>
-                                <span class="badge badge-skill">Playwright</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-light btn-sm">Technical Breakdown</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Asynchronous Data Pipeline</h5>
-                            <p class="card-text text-secondary">A Producer/Worker architecture managing complex job
-                                states.</p>
-                            <div class="mb-4">
-                                <span class="badge badge-skill">Flask</span>
-                                <span class="badge badge-skill">BS4</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-light btn-sm">View System Logic</a>
+                            <a href="https://github.com/Vansoh076/personal_workspace-improved/blob/main/app.md" class="btn btn-outline-light btn-sm w-auto">View Architecture</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card h-100 p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Media Automation Engine</h5>
-                            <p class="card-text text-secondary">Utilizing Playwright and XPath for automated media
-                                retrieval.</p>
-                            <div class="mb-4">
-                                <span class="badge badge-skill">Flask</span>
-                                <span class="badge badge-skill">Playwright</span>
+                <div class="col-lg-6">
+                    <div class="card h-100 p-3 shadow-sm border-secondary">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary fw-bold">Personal Backup System</h5>
+                            <p class="card-text text-secondary small flex-grow-1">
+                                A Linux-based redundancy utility using <strong>tar, awk, and du</strong>.
+                                Integrated
+                                the <strong>Telegram Bot API</strong> to provide real-time status alerts and remote
+                                manifest
+
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-skill">Bash</span>
+                                <span class="badge badge-skill">Telegram API</span>
+
                             </div>
-                            <a href="#" class="btn btn-outline-light btn-sm">Technical Breakdown</a>
+                            <a href="#" class="btn btn-outline-light btn-sm w-auto">View Logic</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card h-100 p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Asynchronous Data Pipeline</h5>
-                            <p class="card-text text-secondary">A Producer/Worker architecture managing complex job
-                                states.</p>
-                            <div class="mb-4">
-                                <span class="badge badge-skill">Flask</span>
-                                <span class="badge badge-skill">BS4</span>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 p-3 shadow-sm border-secondary">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary fw-bold">Personal Workspace v1</h5>
+                            <p class="card-text text-secondary small flex-grow-1">
+                                Full-stack CRUD application built with <strong>Flask and SQLite3</strong>. Features
+                                mobile-first responsive design using <strong>Bootstrap grid</strong> and custom CSS,
+                                with
+                                strict server-side validation for data integrity.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-skill">Python/Flask</span>
+                                <span class="badge badge-skill">SQLite3</span>
+                                <span class="badge badge-skill">Bootstrap</span>
+                                <span class="badge badge-skill">HTML/CSS</span>
+                                <span class="badge badge-skill">Js (DOM)</span>
+
                             </div>
-                            <a href="#" class="btn btn-outline-light btn-sm">View System Logic</a>
+                            <a href="#" class="btn btn-outline-light btn-sm w-auto">View Code</a>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
         </div>
     </section>
 
+
     <section id="skills" class="py-5">
-        <div class="container">
+        <div class="container-fluid px-md-5">
             <h2 class="mb-5 border-bottom pb-2">Expertise</h2>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
 
-                <div class="col-md-4">
-                    <h5 class="text-secondary mb-3"><i class="bi bi-code-slash me-2"></i>Backend & Logic</h5>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h6 class="text-primary mb-3">Languages</h6>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Python (Advanced)</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Python</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">SQL</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">JavaScript</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h6 class="text-primary mb-3">Frameworks & Libs</h6>
+                    <div class="d-flex flex-wrap gap-2">
                         <span class="badge rounded-pill p-2 px-3 border border-secondary">Flask</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">PostgreSQL</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">SQLite3</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">REST APIs</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <h5 class="text-secondary mb-3"><i class="bi bi-robot me-2"></i>Automation</h5>
-                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Bootstrap</span>
                         <span class="badge rounded-pill p-2 px-3 border border-secondary">Playwright</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">BeautifulSoup4</span>
                         <span class="badge rounded-pill p-2 px-3 border border-secondary">yt-dlp</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Xpath/Selectors</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Requests</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">FFmpeg</span>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <h5 class="text-secondary mb-3"><i class="bi bi-terminal me-2"></i>Systems</h5>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h6 class="text-primary mb-3">Dev Tools</h6>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">System Architecture</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Git / Version Control</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Bash Scripting</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Linux / Live USB Ops</span>
-                        <span class="badge rounded-pill p-2 px-3 border border-secondary">AI Prompting</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Git</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Terminal</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Vim / Nvim</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h6 class="text-primary mb-3">Coursework</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Data Structures</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Algorithms</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">OS (Linux)</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Computer Networks</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">DBMS (MYSQL)</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <h6 class="text-primary mb-3">Interests</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Cybersecurity</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Open Source</span>
+                        <span class="badge rounded-pill p-2 px-3 border border-secondary">Automation</span>
                     </div>
                 </div>
 
@@ -194,10 +222,12 @@
                 <a href="https://linkedin.com/in/evanson-irungu" class="text-white text-decoration-none border-bottom">
                     <i class="bi bi-linkedin me-1"></i>LinkedIn</a>
 
-                <a href="https://wa.me/0700045695" class="text-white text-decoration-none border-bottom">
+                <a href="https://wa.me/0700045695?text=Hi!%20I%20saw%20your%20portfolio%20and%20wanted%20to%20connect."
+                    class="text-white text-decoration-none border-bottom">
                     <i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
 
-                <a href="mailto:irunguevanson40@gmail.com" class="text-white text-decoration-none border-bottom">
+                <a href="mailto:irunguevanson40@gmail.com?subject=Portfolio%20Inquiry"
+                    class="text-white text-decoration-none border-bottom">
                     <i class="bi bi-envelope me-1"></i>Email</a>
             </div>
             <p class="mt-5 text-muted small">&copy; 2026 Evanson Irungu</p>

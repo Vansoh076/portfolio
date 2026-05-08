@@ -5,7 +5,7 @@ body {
     position: relative;
 }
 
-/* Minimalist Nav Styling */
+/*  Nav  */
 .navbar {
     background-color: rgba(18, 18, 18, 0.95) !important;
     backdrop-filter: blur(10px);
@@ -43,6 +43,7 @@ section {
     min-height: 80vh;
 }
 
+/* Card Styling */
 .card {
     background-color: #1e1e1e;
     border: 1px solid #333;
@@ -67,7 +68,7 @@ section {
     padding: 10px;
 }
 
-/* CV Button Styling */
+/* CV Button  */
 .btn-download {
     border: 1px solid #0d6efd;
     color: #0d6efd;
@@ -83,4 +84,16 @@ section {
     color: #fff;
     box-shadow: 0 0 15px rgba(13, 110, 253, 0.4);
 }
+
+#skills.py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+
+#skills h2.mb-5 {
+    margin-bottom: 1rem !important;
+}
+
+
 
